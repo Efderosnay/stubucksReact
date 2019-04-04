@@ -1,0 +1,137 @@
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr;
+    grid-template-rows: 1fr 1fr 1.2fr 0.5fr;
+    grid-template-areas: "container4 container4 container4 container4" "container4 container4 container4 container4" "container4 container4 container4 container4" "footer footer footer footer";
+}
+  
+.footer {
+    display: grid;
+    grid-template-columns: 0.3fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    grid-area: footer;
+    height: 100%;
+    background-color:  rgba(16, 16, 23, 0.947);
+}
+  
+.container4 {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr 0.4fr 1.4fr 0.4fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-template-areas: "nothing nothing nothing nothing nothing nothing" "blank0 helpDetails companyInfo blank2 share blank4" "blank aboutUs blank1 blank2 blank3 blank3";
+    grid-area: container4;
+    height: 100%;
+    background-color: rgba(208, 208, 208, 0.591);
+    /* grid-gap: 2.5em; */
+    grid-row-gap: 5em;
+
+}  
+.helpDetails { 
+    grid-area: helpDetails; 
+    height: 100%;
+}  
+.helpTitle{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.aboutUs {
+    grid-area: aboutUs;
+    height: 100%;
+}  
+.aboutTitle{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;    
+}
+.blank0 { 
+    grid-area: blank; 
+    height: 100%;
+}
+.companyInfo { 
+    grid-area: companyInfo; 
+    height: 100%;
+} 
+.comInfoTitle{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.blank1 { 
+    grid-area: blank1;
+    height: 100%;
+}  
+.blank2 { 
+    grid-area: blank2; 
+    height: 100%;
+}  
+.share { 
+    grid-area: share; 
+    height: 100%;
+}  
+.shareTitle{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.blank3 { 
+    grid-area: blank3; 
+    height: 100%;
+}
+.blank4 { 
+    grid-area: blank4; 
+    height: 100%;
+}
+ul{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 0;
+}
+.list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+.icon1{
+    width: 3vh;
+}
+.icon2{
+    width: 3vh;
+}
+.icon3{
+    width: 3vh;
+}
+.icon4{
+    width: 3vh;
+}
+.icon5{
+    width: 3vh;
+}
+ol{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    color: white;
+}
+.textLeft{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.textRight{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.line1{
+    display: flex; 
+    justify-content: flex-end;
+}

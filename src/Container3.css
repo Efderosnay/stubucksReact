@@ -1,0 +1,134 @@
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 0.10fr 1.5fr;
+    grid-template-areas: "shopTitle" "arrow2" "container3";
+}
+.arrow2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: arrow2;
+    height: 100%;
+    background-color:white;
+}  
+.arrowImg2{
+    height: 50%;
+}
+.shopTitle { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".";
+    background-color:rgb(49, 113, 106);
+    height: 100%;
+    grid-area: shopTitle;
+}
+.title2{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+} 
+.container3 { 
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 1fr 0.2fr 0.02fr 0.4fr;
+    grid-template-areas: "buyCoffee buyTea buyEquipment";
+    height: 100%;
+    background-color: white;
+    grid-area: container3;
+    justify-content: center;
+    grid-row-gap: 1.2em;
+    padding: 0 100px;
+}
+hr{
+    width: 45%;
+}
+.buyCoffee{
+    grid-column: 1;
+    height:100%;
+    grid-area: buyCoffee;
+    display: flex;
+    justify-content: center;
+}
+.image1{  
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+}    
+.coffeeTitle{
+    grid-row: 2;
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    /* margin-right: 10%; */
+}
+.coffeeText{
+    grid-row: 3;
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding:0 120px;
+}
+.buyTea{
+    grid-column: 2;
+    height:100%;
+    grid-area: buyTea;
+    display: flex;
+    justify-content: center;
+}
+.image2{ 
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+}
+.teaTitle{
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+.teaText{
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding:0 125px;
+}
+.buyEquipment{
+    grid-column: 3;
+    height:100%;
+    grid-area: buyEquipment;
+    display: flex;
+    justify-content: center;
+}
+.image3{
+    width: 40vh;
+    height: 40vh;
+}
+.equipmentTitle{
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+.equipText{
+    color: rgba(16, 16, 23, 0.947);
+   font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding:0 115px;  
+}

@@ -1,0 +1,152 @@
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.10fr 1.5fr 0.2fr;
+    grid-template-areas: "newProductTitle" "arrow" "container2" "emptyBox";
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: arrow;
+    height: 100%;
+    background-color: rgba(16, 16, 23, 0.947);
+}  
+.arrow1{
+    height: 50%;
+}
+.newProductTitle { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".";
+    background-color:white;
+    height: 100%;
+    grid-area: newProductTitle;
+}
+.title1{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}  
+.container2 { 
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "backImage textContent";
+    height: 100%;
+    background-color: rgba(16, 16, 23, 0.947);
+    grid-area: container2;
+    /* grid-column-gap: 3em; */
+}
+.backImage{
+    grid-column: 1;
+    height:100%;
+    grid-area: backImage;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+.background2{
+    height: 85vh;
+}
+.textContent{
+    display: grid;
+    grid-template-columns: 0.9fr;
+    grid-template-rows: 1fr 1.3fr 0.6fr;
+    grid-template-areas: "." "." ".";
+    grid-area: textContent;
+    height: 100%;
+}
+.title{
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+.listDes{
+    grid-row: 2;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.listDes1{
+    text-align: end;
+}
+.listDes2{
+    text-align: end;
+}
+.listDes3{
+    text-align: end;
+}
+.emptyBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".";
+    background-color:rgba(16, 16, 23, 0.947);
+    height: 100%;
+    grid-area: emptyBox;
+}    
+
+ 
+@media (max-width: 600px){
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.2fr 0.10fr 1.5fr 0.2fr;
+        grid-template-areas: "newProductTitle" "arrow" "container2" "emptyBox";
+    }
+    .newProductTitle { 
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ".";
+        background-color:white;
+        height: 100%;
+        grid-area: newProductTitle;
+    }
+    .background2{
+        height: 42vh;
+    }
+    .container2 { 
+        display: grid;
+        grid-template-columns: 0.4fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "backImage textContent";
+        height: 100%;
+        background-color: rgba(16, 16, 23, 0.947);
+        grid-area: container2;
+        /* grid-column-gap: 3em; */
+    }
+    .textContent{
+        display: grid;
+        grid-template-columns: 0.45fr;
+        grid-template-rows: 1fr 1.3fr 0.6fr;
+        grid-template-areas: "." "." ".";
+        grid-area: textContent;
+        height: 100%;
+    }
+    .emptyBox{
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ".";
+        background-color:rgba(16, 16, 23, 0.947);
+        height: 100%;
+        grid-area: emptyBox;
+    }  
+}

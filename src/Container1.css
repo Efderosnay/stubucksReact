@@ -1,0 +1,186 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    grid-template-rows: 0.07fr 0.25fr 2.4fr;
+    grid-template-areas: 'banner gps' 'menu menu' 'container1 container1';
+   }
+   
+   .banner { 
+     grid-area: banner; 
+     background-color: white;
+     height: 100%;
+    }
+   
+   .gps { 
+     grid-area: gps; 
+     background-color: #007A4D;
+     height: 100%;
+    }
+    .menu{
+     grid-area: menu;
+     background-color: rgba(16, 16, 23, 0.947);
+     height: 100%; 
+     display: grid;
+    }
+   .menu-nav{
+      display: grid;
+      grid-template-columns: 0px 100px 100px 100px 100px 250px 100px 100px ;
+      grid-template-rows: 1fr;
+      grid-template-areas: '. . . . . . . .';
+      grid-gap: 1em;
+      align-items: center;
+      text-align: center;
+      font-family: "Gilroy-ExtraBold";
+      font-weight: 700;
+      margin: 0 auto;
+      max-width: 1720px;
+   }
+   
+   .container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: '.';
+    grid-area: container1;
+    height: 100vh;
+   }
+   .blankPage { 
+     grid-column: 1; 
+    }
+  a{
+    text-decoration: none; 
+  }
+  .coffeePage { 
+    grid-column: 2;
+    color: white;
+    font-size: 20px; 
+  }
+  .teaPage { 
+    grid-column: 3;
+    color: white;
+    font-size: 20px;
+   }
+  .menu-itemPage { 
+    grid-column: 4;
+    color: white;
+    font-size: 20px;
+   }
+  .rewardsPage { 
+    grid-column: 5;
+    color: white;
+    font-size: 20px;
+   }
+  .joinPage { 
+    grid-column: 6;
+    color: white;
+    font-size: 20px;
+   }
+  .locationsPage { 
+    grid-column: 7;
+    color: white;
+    font-size: 20px;
+   }
+  .specialsPage { 
+    grid-column: 8;
+    color: white;
+    font-size: 20px;
+   }
+   .app-background{
+     width: 100vw;
+     height: 100vh;
+   }
+   .app-logo {
+    height: 150px;
+    position: absolute;
+    top: 7%;
+    left:2%;
+  }
+  h1{
+    color: white;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 70px;
+    font-weight: bold;
+  }
+  h3{
+    color: white;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 25px;
+  }
+  .order{
+    color: white;
+    background-color: black;
+    font-family: "Gilroy-Light";
+    height:7vh;
+    width: 15vw;
+    font-size: 20px;
+    border-radius: 6%;
+  }
+  .menuButton{
+    display: none;
+  }
+  
+  @media (max-width: 600px){
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:0.25fr 2.4fr;
+      grid-template-areas:'menu' 'container1';
+     }
+     .menu-nav{
+       display: none;
+     }
+     .menuButton{
+      display: flex;
+      align-content: flex-start;
+      width: 40px;
+      height: 60px;
+      margin: 8px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+    }
+    .app-logo{
+      height:65px;
+      top:1%;
+      left:87%;
+    }
+    .app-background{
+      height: 95vh;
+    }
+    .menu{
+      grid-area: menu;
+      background-color: rgba(16, 16, 23, 0.947);
+      height: 100%; 
+      display: grid;
+     }
+    .menuMobile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.01fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "." "." "." "." "." "." ".";
+    font-family: "Gilroy-Light";
+    justify-content: center;
+      align-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    background-color: rgba(16, 16, 23, 0.947);
+    } 
+    .menuMobile a{
+      color: white;
+      font-size: 20px; 
+    }
+    .menuMobile li{
+      justify-content: center;
+      align-content: center;
+    }
+    .order{
+      color: white;
+      background-color: rgb(49, 113, 106);
+      font-family: "Gilroy-Light";
+      height:7vh;
+      width: 30vw;
+      font-size: 20px;
+      border-radius: 6%;
+    }
+  }
